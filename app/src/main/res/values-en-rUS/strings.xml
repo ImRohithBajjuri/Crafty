@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="color_picker_title">Select a color</string>
+    <string name="user_signed_out_text">You are not signed in. Sign in to get all your cards, favorites, and fonts, etc</string>
+    <string name="favourites">Favorites</string>
+    <string name="current_colour">Current color</string>
+    <string name="highlight_colour">Highlight color</string>
+
+</resources>

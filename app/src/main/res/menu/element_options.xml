@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Element name"
+        android:enabled="false"
+        android:id="@+id/elementName"
+       />
+
+    <item
+        android:title="Set name"
+        android:id="@+id/setElementName"
+        android:icon="@drawable/element_name_edit_menu_24"
+        />
+
+    <item
+    android:title="Unselect"
+    android:id="@+id/unselectElement"
+    android:icon="@drawable/select_element_menu_24dp"
+    />
+
+    <item
+        android:title="Save"
+        android:id="@+id/saveElement"
+        android:icon="@drawable/save_menu_24"
+        />
+
+    <item
+        android:title="Export as"
+        android:id="@+id/exportElementAs"
+        android:icon="@drawable/export_as_menu_24">
+        <menu>
+            <item android:title="JPG"
+                android:id="@+id/exportElementAsJPG"
+                android:icon="@drawable/jpg_menu_24"/>
+            <item android:title="PNG"
+                android:id="@+id/exportElementAsPNG"
+                android:icon="@drawable/png_menu_24"/>
+            <item android:title="MP4"
+                android:id="@+id/exportElementAsMP4"
+                android:icon="@drawable/movie_24dp"/>
+            <item
+                android:title="Element"
+                android:id="@+id/exportElementAsElement"
+                android:icon="@drawable/element_download_menu_24dp"
+                />
+        </menu>
+    </item>
+
+    <item
+        android:title="Randomize position"
+        android:id="@+id/randomizeElementPos"
+        android:icon="@drawable/randomize_position_menu_24"/>
+
+    <item
+        android:title="Visibility"
+        android:id="@+id/elementVisibility"
+        android:icon="@drawable/element_visibility_menu_24dp"
+        >
+
+        <menu                                                                                                                                                                                                                                                                                                           >
+            <item
+                android:title="Visible"
+                android:id="@+id/elementVisible"
+                android:icon="@drawable/element_visibility_menu_24dp"/>
+            <item
+                android:title="Invisible"
+                android:id="@+id/elementInvisible"
+                android:icon="@drawable/element_invisible_menu_24dp"/>
+        </menu>
+    </item>
+
+    <item
+        android:title="Remove"
+        android:id="@+id/removeElement"
+        android:icon="@drawable/remove_element_menu_24dp"/>
+
+    <item
+        android:title="Info"
+        android:id="@+id/elementInfo"
+        android:icon="@drawable/info_24dp"/>
+</menu>

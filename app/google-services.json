@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "591456899457",
+    "project_id": "crafty-b6bd0",
+    "storage_bucket": "crafty-b6bd0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591456899457:android:66c0235a4dbdb1ea885880",
+        "android_client_info": {
+          "package_name": "com.rb.crafty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591456899457-joahqhnri1kimmrv2m7i3u55qff73m6o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rb.crafty",
+            "certificate_hash": "3e51b045d97baa3ea2de5143e74026e789fbddf5"
+          }
+        },
+        {
+          "client_id": "591456899457-2bogsbn3j5oaooukrc6hn6ds9ulgu2d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjWZu8qA_-bERpJTJMPco6OfGfruq6Rig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591456899457-2bogsbn3j5oaooukrc6hn6ds9ulgu2d1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".sheets.HelpSheet"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/deepPurple"
+        android:text="Help"
+        android:textSize="@dimen/sheetHeaderSize"
+        android:fontFamily="@font/open_sans_bold"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/helpSheetHeader"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="How to create a card"
+        android:textColor="@color/deepPurple"
+        android:id="@+id/helpCreate"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:background="@drawable/round_ripple"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="How to export a card as image"
+        android:textColor="@color/deepPurple"
+        android:id="@+id/helpExportCardImage"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:background="@drawable/round_ripple"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="How to export a card as file"
+        android:textColor="@color/deepPurple"
+        android:id="@+id/helpExportCard"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:background="@drawable/round_ripple"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="How to add a card to your favourites"
+        android:textColor="@color/deepPurple"
+        android:id="@+id/helpAddFav"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:background="@drawable/round_ripple"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="How to add a card to your favourites"
+        android:textColor="@color/deepPurple"
+        android:id="@+id/helpHide"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:background="@drawable/round_ripple"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

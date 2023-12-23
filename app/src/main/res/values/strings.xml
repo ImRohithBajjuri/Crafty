@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name" translatable="false">Crafty</string>
+    <string name="card_name_hint" translatable="false">Card name</string>
+
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="color_picker_title">Select a colour</string>
+    <string name="color_picker_selected" translatable="false">Select</string>
+
+    <string name="user_signed_out_text">You are not signed in. Sign in to get all your cards, favourites, and fonts, etc</string>
+    <string name="no_greetr_cards_text" translatable="false">You have no Crafty cards. Start creating amazing cards by clicking below!</string>
+    <string name="sign_in_text" translatable="false">Sign in</string>
+    <string name="favourites">Favourites</string>
+    <string name="no_added_fonts_text" translatable="false">You don\'t have any added fonts in your profile. Click the button below to add new fonts</string>
+
+    <string name="current_colour">Current colour</string>
+
+    <string name="highlight_colour">Highlight colour</string>
+
+    <string name="get_premium_text" translatable="false">Get Premium to unlock all features and remove ads with just a one time purchase!</string>
+
+    <string name="crafty_premium_id" translatable="false">crafty_premium</string>
+
+    <string name="new_premium_user_text" translatable="false">You are now a premium user! With this new premium purchase, you can enjoy all the features without any ads!</string>
+
+    <string name="premium_feature_one" translatable="false">Create unlimited amount of cards! And unlock all the features</string>
+    <string name="premium_feature_two" translatable="false">Add and edit as many elements as you want including gradient and pattern elements to your card</string>
+    <string name="premium_feature_three" translatable="false">Access to all patterns. Use them with your pattern elements and card foregrounds</string>
+    <string name="premium_feature_four" translatable="false">Save any element to your device as a file, image, etc</string>
+    <string name="premium_feature_five" translatable="false">Download your cards with it\'s elements to your device. You can later share, import and view your downloaded cards.</string>
+    <string name="premium_feature_six" translatable="false">No more ads! With premium you get a complete ad free experience with no interruptions</string>
+    <string name="premium_feature_seven" translatable="false">Not just these but many many more! With premium you are also supporting the development of the app. A big thank you!</string>
+
+    <string name="premium_user_text" translatable="false">You are a premium user. You have unlimited access to the app with all the features unlocked and with zero ads for lifetime!</string>
+
+    <string name="get_premium_sheet_text" translatable="false">Get premium to unlock all the features and remove all ads for lifetime! Make the most beautiful cards using the unlocked features with premium</string>
+
+    <string name="app_version" translatable="false">App version V1.9</string>
+
+    <!--    Normal unit ids.-->
+    <string name="added_fonts_banner" translatable="false">ca-app-pub-4804289087354371/2035618627</string>
+    <string name="profile_banner" translatable="false">ca-app-pub-4804289087354371/6918024610</string>
+    <string name="main_activity_banner" translatable="false">ca-app-pub-4804289087354371/1637777773</string>
+    <string name="favourites_banner" translatable="false">ca-app-pub-4804289087354371/6762111941</string>
+    <string name="app_settings_banner" translatable="false">ca-app-pub-4804289087354371/3348700294</string>
+    <string name="element_controls_banner" translatable="false">ca-app-pub-4804289087354371/4091754562</string>
+
+    <string name="card_saved_interstitial" translatable="false">ca-app-pub-4804289087354371/3348700294</string>
+    <string name="max_elements_added_interstitial" translatable="false">ca-app-pub-4804289087354371/3689226047</string>
+    <string name="some_ideas_interstitial" translatable="false">ca-app-pub-4804289087354371/7507437154</string>
+
+    <string name="home_cards_ui_native" translatable="false">ca-app-pub-4804289087354371/3157128605</string>
+    <string name="profile_native" translatable="false">ca-app-pub-4804289087354371/2380013804</string>
+
+
+    <!--    Test unit ids-->
+    <!--    <string name="added_fonts_banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="profile_banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="main_activity_banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="favourites_banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="app_settings_banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="element_controls_banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>-->
+
+    <!--    <string name="card_saved_interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="max_elements_added_interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="some_ideas_interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+
+    <!--    <string name="home_cards_ui_native" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="profile_native" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+
+    <!--    <string name="banner_test_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial_test_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="native_test_id" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+
+</resources>

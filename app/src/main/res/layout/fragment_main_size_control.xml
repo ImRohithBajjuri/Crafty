@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainSizeOptionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.rb.crafty.mainControls.MainSizeControlFragment">
+
+    <TextView
+        android:id="@+id/mainSizeOptionWidthSH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Width"
+        android:textColor="@color/deepPurple"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mainSizeOptionWidthText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="0"
+        android:textColor="@color/deepPurple"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainSizeOptionWidthSH" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/mainSizeOptionWidthSeek"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:max="5000"
+        android:progress="0"
+        android:progressBackgroundTint="@color/deepPurpleLight2"
+        android:progressTint="@color/deepPurple"
+        android:thumbTint="@color/deepPurple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/mainSizeOptionWidthText"
+        app:layout_constraintTop_toBottomOf="@id/mainSizeOptionWidthSH" />
+
+    <TextView
+        android:id="@+id/mainSizeOptionHeightSH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Height"
+        android:textColor="@color/deepPurple"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainSizeOptionWidthSeek" />
+
+    <TextView
+        android:id="@+id/mainSizeOptionHeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="0"
+        android:textColor="@color/deepPurple"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainSizeOptionHeightSH" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/mainSizeOptionHeightSeek"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:max="5000"
+        android:progress="0"
+        android:progressBackgroundTint="@color/deepPurpleLight2"
+        android:progressTint="@color/deepPurple"
+        android:thumbTint="@color/deepPurple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/mainSizeOptionHeightText"
+        app:layout_constraintTop_toBottomOf="@id/mainSizeOptionHeightSH" />
+</androidx.constraintlayout.widget.ConstraintLayout>

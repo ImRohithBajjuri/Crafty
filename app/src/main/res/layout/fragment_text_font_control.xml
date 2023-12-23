@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.rb.crafty.textControls.TextFontControlFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/textFontControlAllFontsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/textFontSectionsCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/deepPurpleLight2"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textFontSectionSelector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/selector_bar"
+                    android:backgroundTint="@color/deepPurple"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/defaultSelection"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_bar"
+                        android:backgroundTint="@color/deepPurple"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:gravity="center_horizontal"
+                        android:text="Default"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/yoursSelection"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:gravity="center_horizontal"
+                        android:text="Yours"
+                        android:textColor="@color/deepPurple"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/textFontControlDefaultRecy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingBottom="60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textFontSectionsCard" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/textFontControlYoursRecy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingBottom="60dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/textFontSectionsCard" />
+
+            <TextView
+                android:id="@+id/textFontControlNoFontsTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="@color/deepPurpleLight2"
+                android:fontFamily="@font/open_sans_bold"
+                android:padding="20dp"
+                android:text="Aa"
+                android:textAlignment="center"
+                android:textColor="@color/deepPurple"
+                android:textSize="50sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textFontControlNoFontsDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="60dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/no_added_fonts_text"
+                android:textAlignment="center"
+                android:textColor="@color/deepPurple"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/textFontControlAddFont"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonSize"
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/deepPurple"
+            app:cardCornerRadius="@dimen/buttonCorners"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:strokeColor="@color/deepPurple">
+
+            <TextView
+                android:id="@+id/textFontControlAddFontTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:gravity="center"
+                android:text="Add more Fonts"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:drawableStartCompat="@drawable/ic_round_add_circle_white_24" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/textFontControlAddFontsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/textFontControlSearchBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/fonts_searchbox_bgr"
+            android:backgroundTint="@color/deepPurpleLight2"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/textFontControlSearchBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_round_back_30"
+                app:tint="@color/deepPurple" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/textFontControlSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/open_sans_semibold"
+                android:gravity="center_vertical"
+                android:hint="Search fonts"
+                android:maxLines="1"
+                android:textColor="@color/deepPurple"
+                android:textColorHint="@color/deepPurple"
+                android:textCursorDrawable="@drawable/text_cursor"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/textFontControlSearchClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="0"
+                android:contentDescription="Search Back Button"
+                android:src="@drawable/ic_round_cancel_30"
+                app:tint="@color/deepPurple" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/textFontControlSearchRecy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingBottom="100dp"
+            app:layout_constraintTop_toBottomOf="@id/textFontControlSearchBox"
+           />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

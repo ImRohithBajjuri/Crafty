@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.rb.crafty.elementControls.ElementStrokeControlsFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/elementStrokeControlsParent"
+        >
+
+        <TextView
+            android:id="@+id/elementStrokeWidthControlSH"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Stroke width"
+            android:textColor="@color/deepPurple"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/elementStrokeWidthControlText"
+            app:layout_constraintTop_toBottomOf="@id/elementStrokeWidthControlSH"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="0"
+            android:textColor="@color/deepPurple"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/elementStrokeWidthControlSeek"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/elementStrokeWidthControlText"
+            app:layout_constraintTop_toBottomOf="@id/elementStrokeWidthControlSH"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:max="20"
+            android:progress="0"
+            android:progressBackgroundTint="@color/deepPurpleLight2"
+            android:progressTint="@color/deepPurple"
+            android:thumbTint="@color/deepPurple" />
+
+
+        <TextView
+            android:id="@+id/elementStrokeColorControlSH"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/elementStrokeWidthControlSeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Stroke color"
+            android:textColor="@color/deepPurple"
+            android:textSize="16sp" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/elementStrokeColorControlSH"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/elementStrokeControlColorCard"
+            app:strokeColor="@color/deepPurple"
+            app:strokeWidth="1dp"
+            >
+            <TextView
+                android:id="@+id/elementStrokeColorControlHex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Hex code"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_gravity="start|bottom"
+                android:background="@drawable/round_rect_bgr"
+                android:backgroundTint="@color/deepPurple"
+                android:drawablePadding="5dp"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

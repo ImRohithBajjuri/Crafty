@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Clear all"
+        android:icon="@drawable/ic_round_clear_all_menu_24"
+        android:id="@+id/clearAll"/>
+
+    <item
+        android:title="Merge all"
+        android:icon="@drawable/merge_all_24"
+        android:id="@+id/mergeAll"/>
+
+    <item
+        android:title="Randomize elements position"
+        android:icon="@drawable/randomize_position_menu_24"
+        android:id="@+id/randomizeElementsPos"/>
+
+    <item
+        android:title="Save"
+        android:icon="@drawable/save_menu_24"
+        android:id="@+id/saveCard"/>
+
+    <item
+        android:title="Export as"
+        android:icon="@drawable/export_as_menu_24"
+        android:id="@+id/exportAs">
+        <menu>
+            <item android:title="JPG"
+                android:id="@+id/exportAsJPG"
+                android:icon="@drawable/jpg_menu_24"/>
+            <item android:title="PNG"
+                android:id="@+id/exportAsPNG"
+                android:icon="@drawable/png_menu_24"/>
+            <item android:id="@+id/exportAsVid"
+                android:title="MP4"
+                android:icon="@drawable/movie_24dp"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.rb.crafty.elementControls.ElementBackgroundControlsFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/elementBackgroundControlsParent"
+        >
+
+        <TextView
+            android:id="@+id/elementBackgroundOptionPaddingSH"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Background padding"
+            android:textColor="@color/deepPurple"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/elementBackgroundOptionPaddingText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/elementBackgroundOptionPaddingSH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="0"
+            android:textColor="@color/deepPurple"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/elementBgrOptionPaddingSeek"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/elementBackgroundOptionPaddingText"
+            app:layout_constraintTop_toBottomOf="@id/elementBackgroundOptionPaddingSH"
+            app:layout_constraintBottom_toBottomOf="@id/elementBackgroundOptionPaddingText"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:max="100"
+            android:progress="20"
+            android:progressBackgroundTint="@color/deepPurpleLight2"
+            android:progressTint="@color/deepPurple"
+            android:thumbTint="@color/deepPurple" />
+
+
+        <TextView
+            android:id="@+id/elementBackgroundOptionCornersSH"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/elementBgrOptionPaddingSeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Background corners"
+            android:textColor="@color/deepPurple"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/elementBackgroundOptionCornersText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/elementBackgroundOptionCornersSH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="0"
+            android:textColor="@color/deepPurple"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/elementBgrOptionCornersSeek"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/elementBackgroundOptionCornersText"
+            app:layout_constraintTop_toBottomOf="@id/elementBackgroundOptionCornersSH"
+            app:layout_constraintBottom_toBottomOf="@id/elementBackgroundOptionCornersText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:max="30"
+            android:progress="30"
+            android:progressBackgroundTint="@color/deepPurpleLight2"
+            android:progressTint="@color/deepPurple"
+            android:thumbTint="@color/deepPurple" />
+
+
+        <TextView
+            android:id="@+id/elementBackgroundColorOptionSH"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/elementBgrOptionCornersSeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Background color"
+            android:textColor="@color/deepPurple"
+            android:textSize="16sp" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/elementBackgroundColorOptionSH"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/elementBackgroundControlColorCard"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/deepPurple"
+            >
+            <TextView
+                android:id="@+id/elementBackgroundOptionColorHex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Hex code"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_gravity="start|bottom"
+                android:background="@drawable/round_rect_bgr"
+                android:backgroundTint="@color/deepPurple"
+                android:drawablePadding="5dp"
+                />
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,145 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Greetr" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/deepPurple</item>
+        <item name="colorPrimaryVariant">@color/deepPurple2</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/deepPurpleLight2</item>
+        <item name="colorSecondaryVariant">@color/deepPurple</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/lightGrey</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Customize your theme here. -->
+
+        <item name="dialogTheme">@style/CustomDialogTheme</item>
+        <item name="alertDialogTheme">@style/CustomDialogTheme</item>
+        <item name="android:alertDialogStyle">@style/CustomDialogTheme</item>
+
+        <item name="popupTheme">@style/PopupStyle</item>
+        <item name="popupWindowStyle">@style/PopupStyle</item>
+        <item name="android:popupMenuStyle">@style/PopupStyle</item>
+        <item name="android:popupTheme">@style/PopupStyle</item>
+        <item name="android:popupWindowStyle">@style/PopupStyle</item>
+        <item name="textAppearanceLargePopupMenu">@style/AppTheme.TextAppearance.Popup</item>
+
+    </style>
+
+    <style name="CustomDialogTheme" parent="Theme.Material3.Light.Dialog.Alert">
+        <item name="android:colorAccent">@color/deepPurple</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="dialogCornerRadius">30dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="colorAccent">@color/deepPurple</item>
+        <item name="android:inAnimation">@anim/zoom_in</item>
+        <item name="android:outAnimation">@anim/zoom_out</item>
+        <item name="android:windowAnimationStyle">@style/CustomDialogAnimation</item>
+
+    </style>
+
+    <style name="DarkCustomDialogTheme" parent="Theme.Material3.Light.Dialog.Alert">
+        <item name="android:colorAccent">@color/deepPurpleLight</item>
+        <item name="android:backgroundTint">@color/darkGrey3</item>
+        <item name="dialogCornerRadius">30dp</item>
+        <item name="android:background">@color/darkGrey3</item>
+        <item name="colorAccent">@color/deepPurpleLight</item>
+        <item name="android:inAnimation">@anim/zoom_in</item>
+        <item name="android:outAnimation">@anim/zoom_out</item>
+        <item name="android:windowAnimationStyle">@style/CustomDialogAnimation</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:colorControlNormal">@color/white</item>
+        <item name="textColorAlertDialogListItem">@color/white</item>
+    </style>
+
+    <style name="CustomDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out</item>
+    </style>
+
+
+    <style name="BottomSheetAnim" parent="Animation.Design.BottomSheetDialog">
+        <item name="android:windowEnterAnimation">@anim/activity_open</item>
+        <item name="android:windowExitAnimation">@anim/activity_close</item>
+        <item name="android:shareInterpolator">true</item>
+        <item name="android:animateLayoutChanges">true</item>
+    </style>
+
+    <style name="BottomSheetModal" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_sheet_shape</item>
+    </style>
+
+    <style name="BottomSheetDialogStyle" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetModal</item>
+        <item name="android:windowAnimationStyle">@style/BottomSheetAnim</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="snackbarStyle">@style/SnackbarStyle</item>
+
+    </style>
+
+    <style name="DarkBottomSheetDialogStyle" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/DarkBottomSheetModal</item>
+        <item name="android:windowAnimationStyle">@style/BottomSheetAnim</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="snackbarStyle">@style/SnackbarStyle</item>
+
+    </style>
+
+    <style name="DarkBottomSheetModal" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/dark_bottom_sheet_shape</item>
+    </style>
+
+    <style name="PurpleBottomSheetModal" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/purple_background_sheet_shape</item>
+    </style>
+
+    <style name="PurpleBottomSheetDialogStyle" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/PurpleBottomSheetModal</item>
+        <item name="android:windowAnimationStyle">@style/BottomSheetAnim</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="snackbarStyle">@style/SnackbarStyle</item>
+    </style>
+
+    <style name="TransparentBottomSheetModal" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/transparent_bottom_sheet_shape</item>
+    </style>
+
+    <style name="TransparentBottomSheetDialogStyle" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/TransparentBottomSheetModal</item>
+        <item name="android:windowAnimationStyle">@style/BottomSheetAnim</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="snackbarStyle">@style/SnackbarStyle</item>
+    </style>
+
+    <style name="PopupStyle" parent="Widget.Material3.PopupMenu">
+        <item name="popupMenuBackground">@drawable/popup_menu_bgr</item>
+        <item name="android:textColor">@color/deepPurple</item>
+        <item name="subMenuArrow">@drawable/ic_round_chevron_right_menu_24</item>
+        <item name="android:subMenuArrow" tools:targetApi="n">@drawable/ic_round_chevron_right_menu_24</item>
+        <item name="android:textAppearance">@style/AppTheme.TextAppearance.Popup</item>
+        <item name="android:textColorSecondary">@color/deepPurple</item>
+    </style>
+    <style name="AppTheme.TextAppearance.Popup" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/open_sans_semibold</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/deepPurple</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+    <style name="SnackbarStyle" parent="Widget.MaterialComponents.Snackbar">
+        <item name="elevation">20dp</item>
+    </style>
+
+    <style name="OverLayerTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

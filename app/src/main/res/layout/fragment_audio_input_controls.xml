@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/audioInputControlsParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".audioControls.AudioInputControlsFragment">
+
+    <TextView
+        android:id="@+id/audioInputControlsSH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Current audio"
+        android:textColor="@color/deepPurple"
+        android:textSize="16sp" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/deepPurple"
+        android:id="@+id/audioInputControlsCard"
+        app:cardCornerRadius="@dimen/cardCorners"
+        app:cardElevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/audioInputControlsImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_rect_bgr"
+                android:backgroundTint="@color/deepPurpleLight"
+                android:src="@drawable/audio_100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/deepPurple" />
+
+            <TextView
+                android:id="@+id/audioInputControlsName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="audio file name"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@id/audioInputControlsSeek"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/audioInputControlsImg"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/audioInputControlsSeek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:progressBackgroundTint="@color/deepPurpleLight2"
+                android:progressTint="@color/white"
+                android:thumbTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/audioInputControlsPlayPause"
+                app:layout_constraintStart_toEndOf="@id/audioInputControlsImg"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/audioInputControlsCurrentSecs"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="0:00"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/audioInputControlsSeek"
+                app:layout_constraintTop_toBottomOf="@id/audioInputControlsSeek" />
+
+            <TextView
+                android:id="@+id/audioInputControlsTotalSecs"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="0:00"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/audioInputControlsSeek"
+                app:layout_constraintTop_toBottomOf="@id/audioInputControlsSeek" />
+
+            <ImageView
+                android:id="@+id/audioInputControlsPlayPause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/play_35dp"
+                app:layout_constraintBottom_toBottomOf="@id/audioInputControlsSeek"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/audioInputControlsSeek"
+                app:tint="@color/white"
+                android:scaleType="fitCenter"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/audioInputControlsAdd"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/buttonSize"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            app:cardBackgroundColor="@color/deepPurple"
+            app:cardCornerRadius="@dimen/buttonCorners"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/deepPurple"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/audioInputControlsAddTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:gravity="center"
+                android:text="Add audio"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:drawableStartCompat="@drawable/ic_round_add_circle_white_24" />
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/audioInputControlsGenerate"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/buttonSize"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            app:cardBackgroundColor="@color/deepPurple"
+            app:cardCornerRadius="@dimen/buttonCorners"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/deepPurple"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/audioInputControlsGenerateTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:gravity="center"
+                android:text="Create audio"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:drawableStartCompat="@drawable/round_audiotrack_24" />
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

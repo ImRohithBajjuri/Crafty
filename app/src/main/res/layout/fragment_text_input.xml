@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textInputOptionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.rb.crafty.textControls.TextInputFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Input"
+        android:textColor="@color/deepPurple"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/textInputOptionField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/open_sans_semibold"
+        android:hint="Your text"
+        android:padding="10dp"
+        android:textColor="@color/deepPurple"
+        android:textColorHint="@color/deepPurpleLight2"
+        android:textCursorDrawable="@drawable/text_cursor"
+        android:textSize="18sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+

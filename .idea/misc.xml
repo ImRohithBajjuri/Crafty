@@ -1,0 +1,70 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Greetr/app/src/main/res/drawable-v24/circle_background.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable-v24/selection_background.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable-v24/text_cursor.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/bottom_round_rect_bgr.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/bottom_sheet_shape.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/circle_background.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/element_bgr.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/element_bgr_layer_list.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/element_outliner.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/element_outliner_controller.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_account_circle_50.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_add_100.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_add_50.xml" value="0.1145" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_add_circle_24.xml" value="0.135" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_add_circle_white_24.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_arrow_back_30.xml" value="0.1145" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_change_circle_24.xml" value="0.1445" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_check_39.xml" value="0.1145" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_crop_free_35.xml" value="0.1445" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_crop_rotate_50.xml" value="0.1445" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_flip_to_front_50.xml" value="0.1445" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_image_35.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_image_50.xml" value="0.1145" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_image_placeholder_100.xml" value="0.1445" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_keyboard_arrow_down_30.xml" value="0.1145" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_lens_24.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_lens_50.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_person_50.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_rectangle_50.xml" value="0.1445" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_save_alt_30.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_share_30.xml" value="0.135" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_star_outline_30.xml" value="0.135" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_text_fields_100.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ic_round_text_fields_50.xml" value="0.1145" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/profile_layer_bgr.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/profile_layer_list_50.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/ripple.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/round_delete_30.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/round_rect_bgr.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/round_ripple.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/text_cursor.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/drawable/top_round_rect_bgr.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/font/carter_one.xml" value="0.17516218721038" />
+        <entry key="..\:/Greetr/app/src/main/res/layout/activity_greetr_creator.xml" value="0.22" />
+        <entry key="..\:/Greetr/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Greetr/app/src/main/res/layout/added_element_item.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/layout/creator_image.xml" value="0.16417272338606242" />
+        <entry key="..\:/Greetr/app/src/main/res/layout/creator_text.xml" value="0.2" />
+        <entry key="..\:/Greetr/app/src/main/res/layout/element_image_options_sheet.xml" value="0.13253012048192772" />
+        <entry key="..\:/Greetr/app/src/main/res/layout/element_item.xml" value="0.1" />
+        <entry key="..\:/Greetr/app/src/main/res/layout/element_options.xml" value="0.2" />
+        <entry key="..\:/Greetr/app/src/main/res/layout/element_options_sheet.xml" value="0.2" />
+        <entry key="..\:/Greetr/app/src/main/res/layout/fragment_elements_sheet.xml" value="0.2" />
+        <entry key="..\:/Greetr/app/src/main/res/layout/greeting_card.xml" value="0.1859375" />
+        <entry key="..\:/Greetr/app/src/main/res/layout/greetr_home_ui_card.xml" value="0.2" />
+        <entry key="..\:/Greetr/app/src/main/res/layout/greetr_ui_card.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

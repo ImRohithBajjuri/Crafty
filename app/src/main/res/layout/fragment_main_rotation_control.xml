@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainRotationControlsParent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.rb.crafty.mainControls.MainRotationControlFragment">
+
+    <TextView
+        android:id="@+id/mainRotationOptionSH"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Rotation"
+        android:textColor="@color/deepPurple"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/mainRotationOptionText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainRotationOptionSH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="0"
+        android:textColor="@color/deepPurple"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/mainRotateOptionSeek"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/mainRotationOptionText"
+        app:layout_constraintTop_toBottomOf="@id/mainRotationOptionSH"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:max="360"
+        android:progress="0"
+        android:progressBackgroundTint="@color/deepPurpleLight2"
+        android:progressTint="@color/deepPurple"
+        android:thumbTint="@color/deepPurple" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

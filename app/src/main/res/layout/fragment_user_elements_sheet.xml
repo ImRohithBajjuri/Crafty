@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".sheets.UserElementsSheet"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/deepPurple"
+            android:text="Your elements"
+            android:textSize="@dimen/sheetHeaderSize"
+            android:fontFamily="@font/open_sans_bold"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/yourElementsSheetHeader"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userElementsSheetRecy"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/yourElementsSheetHeader"
+            android:paddingBottom="100dp"
+            android:clipToPadding="false"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|center_horizontal">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/deepPurple"
+            app:cardCornerRadius="@dimen/cardCorners"
+            app:cardElevation="0dp"
+            android:layout_margin="10dp"
+            android:id="@+id/userElementsEmptyCard"
+            android:paddingBottom="100dp"
+            android:clipToPadding="false"
+            android:visibility="gone"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You don't have any saved elements. Import or save new elements to see them here..."
+                android:textColor="@color/white"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textSize= "18sp"
+                android:layout_margin="20dp"/>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonSize"
+            app:cardCornerRadius="@dimen/buttonCorners"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/deepPurple"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/userElementsSheetImportButton"
+            android:layout_gravity="bottom"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="Import element"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textAllCaps="true"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                app:drawableStartCompat="@drawable/ic_round_add_circle_white_24"
+                android:id="@+id/userElementsSheetImportButtonTxt"/>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

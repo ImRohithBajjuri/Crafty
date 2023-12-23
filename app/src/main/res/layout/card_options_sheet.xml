@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rb.crafty.sheets.CardOptionsSheet"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/deepPurple"
+        android:text="Options"
+        android:textSize="@dimen/sheetHeaderSize"
+        android:fontFamily="@font/open_sans_bold"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/cardOptionsSheetHeader"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View in fullscreen"
+        android:textColor="@color/deepPurple"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:id="@+id/viewFullCardOption"
+        android:background="@drawable/round_ripple"
+        android:gravity="center_vertical"
+        app:drawableStartCompat="@drawable/fullscreen_30dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refresh this card"
+        android:textColor="@color/deepPurple"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:id="@+id/refreshCardOption"
+        android:background="@drawable/round_ripple"
+        android:gravity="center_vertical"
+        app:drawableStartCompat="@drawable/refresh_30dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hide"
+        android:textColor="@color/deepPurple"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:id="@+id/hideCardOption"
+        android:background="@drawable/round_ripple"
+        android:gravity="center_vertical"
+        app:drawableStartCompat="@drawable/invisisble_30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to favourites"
+        android:textColor="@color/deepPurple"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:id="@+id/favCardOption"
+        android:background="@drawable/round_ripple"
+        android:gravity="center_vertical"
+        app:drawableStartCompat="@drawable/ic_round_favorite_30" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:textColor="@color/deepPurple"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:id="@+id/shareCardOption"
+        android:background="@drawable/round_ripple"
+        android:gravity="center_vertical"
+        app:drawableStartCompat="@drawable/ic_round_share_30" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download this card"
+        android:textColor="@color/deepPurple"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:id="@+id/downloadCardOption"
+        android:background="@drawable/round_ripple"
+        android:gravity="center_vertical"
+        app:drawableStartCompat="@drawable/ic_round_save_alt_30" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Export as image"
+        android:textColor="@color/deepPurple"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:id="@+id/exportasImageCardOption"
+        android:background="@drawable/round_ripple"
+        android:gravity="center_vertical"
+        app:drawableStartCompat="@drawable/image_placeholder_30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textColor="@color/deepPurple"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:id="@+id/deleteCardOption"
+        android:background="@drawable/round_ripple"
+        android:gravity="center_vertical"
+        app:drawableStartCompat="@drawable/ic_round_delete_option_30" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to your list"
+        android:textColor="@color/deepPurple"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:id="@+id/addSICardOption"
+        android:background="@drawable/round_ripple"
+        android:gravity="center_vertical"
+        app:drawableStartCompat="@drawable/add_font_circle_outline_30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Card info"
+        android:textColor="@color/deepPurple"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:id="@+id/cardInfoOption"
+        android:background="@drawable/round_ripple"
+        android:gravity="center_vertical"
+        app:drawableStartCompat="@drawable/info_30dp"
+        />
+</androidx.appcompat.widget.LinearLayoutCompat>

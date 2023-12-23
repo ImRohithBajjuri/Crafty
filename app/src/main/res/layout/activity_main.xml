@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rb.crafty.MainActivity"
+    android:background="@color/lightGrey"
+    android:id="@+id/mainParent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollbarSize="0dp"
+        android:paddingBottom="100dp"
+        android:clipToPadding="false">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="horizontal"
+                android:id="@+id/mainAppBar">
+
+                <TextView
+                    android:id="@+id/appHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/carter_one"
+                    android:text="@string/app_name"
+                    android:textColor="@color/deepPurple"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_ripple"
+                    android:src="@drawable/premium_35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/mainGetPremiumImg"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/profile_layer_list_50"
+                    android:layout_margin="10dp"
+                    android:id="@+id/userPic"
+                    android:layout_gravity="center_vertical|end"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your cards"
+                android:textColor="@color/deepPurple"
+                android:textSize="16sp"
+                android:fontFamily="@font/open_sans_semibold"
+                app:layout_constraintTop_toBottomOf="@id/mainAppBar"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/yourCardSh"/>
+
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/greetrHomeUiCardsContainer"
+                app:layout_constraintTop_toBottomOf="@id/yourCardSh"
+                android:orientation="vertical"
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/homeUiRecy"
+                    app:layout_constraintTop_toBottomOf="@+id/yourCardSh"
+                    />
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/yourCardSh"
+                    app:cardBackgroundColor="@color/deepPurpleLight"
+                    app:cardCornerRadius="@dimen/cardCorners"
+                    app:cardElevation="0dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/greetrHomeUiEmptyCard"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_greetr_cards_text"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textColor="@color/deepPurple"
+                        android:textSize="18sp"
+                        android:layout_margin="20dp"
+                        android:layout_gravity="center"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator
+                    android:id="@+id/homeUIDotsIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:spi_dotSize="8dp"
+                    app:spi_dotSpacing="5dp"
+                    app:spi_dotSelectedSize="10dp"
+                    app:spi_dotSelectedColor="@color/deepPurple"
+                    app:spi_dotColor="@color/deepPurpleLight"
+                    app:spi_looped="false"
+                    android:layout_gravity="center"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonSize"
+                app:cardCornerRadius="@dimen/buttonCorners"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/deepPurple"
+                app:layout_constraintTop_toBottomOf="@id/greetrHomeUiCardsContainer"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/createNewGreetrButton"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:text="Create New"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textAllCaps="true"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    app:drawableStartCompat="@drawable/ic_round_add_circle_white_24"
+                    android:id="@+id/createNewCardyButtonTxt"/>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/someIdeasHeader"
+                android:text="Some ideas"
+                android:textSize="16sp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/deepPurple"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/createNewGreetrButton"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/someIdeasRecy"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/someIdeasHeader"
+                />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/cardCorners"
+                app:cardElevation="0dp"
+                android:id="@+id/mainNativeAdCard"
+                app:layout_constraintTop_toBottomOf="@id/someIdeasRecy"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                >
+                <com.google.android.ads.nativetemplates.TemplateView
+                    android:id="@+id/mainNativeTemplate"
+                    app:gnt_template_type="@layout/gnt_medium_template_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mainBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/main_activity_banner"
+        android:visibility="gone"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

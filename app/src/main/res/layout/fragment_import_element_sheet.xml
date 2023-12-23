@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".sheets.ImportCardSheet"
+    android:orientation="vertical"
+    android:id="@+id/importElementSheetParent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/deepPurple"
+        android:text="Import Element"
+        android:textSize="@dimen/sheetHeaderSize"
+        android:fontFamily="@font/open_sans_bold"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/importElementHeader"
+        />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/importElementPlaceholder"
+        android:layout_gravity="center"
+        app:cardCornerRadius="@dimen/cardCorners"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/deepPurple3"
+        app:contentPadding="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/elementAlreadyExistsTxt"
+        android:text="This element is already available in your list"
+        android:textColor="@color/deepPurple"
+        android:textSize="18sp"
+        app:drawableStartCompat="@drawable/error_black_18dp"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/importElementAddButton"
+        app:cardBackgroundColor="@color/deepPurple"
+        app:cardCornerRadius="@dimen/buttonCorners"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/deepPurple"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonSize"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            app:drawableStartCompat="@drawable/ic_round_add_circle_white_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:gravity="center"
+            android:text="Add this element to your list"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

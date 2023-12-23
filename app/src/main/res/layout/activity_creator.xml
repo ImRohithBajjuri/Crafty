@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    tools:context="com.rb.crafty.CreatorActivity"
+    android:animateLayoutChanges="true"
+    android:id="@+id/greetrCreatorParent"
+    >
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/creatorHeaderSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/deepPurpleLight"
+        >
+
+        <ImageView
+            android:id="@+id/creatorCloseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_round_back_30"
+            app:tint="@color/deepPurple"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/round_ripple"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/creatorCardName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/open_sans_semibold"
+            android:hint="@string/card_name_hint"
+            android:padding="10dp"
+            android:textColor="@color/deepPurple"
+            android:textColorHint="@color/deepPurpleLight2"
+            android:textCursorDrawable="@drawable/text_cursor"
+            android:textSize="21sp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:maxLength="100"
+            android:imeOptions="actionDone"/>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_round_more_horiz_30"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/round_ripple"
+            android:id="@+id/creatorOptions"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/creatorHeaderSpace"
+        android:id="@+id/creatorAddedElementsLayout"
+        android:background="@drawable/bottom_round_rect_bgr"
+        android:backgroundTint="@color/deepPurpleLight"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Elements"
+            android:textColor="@color/deepPurple"
+            android:textSize="18sp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:id="@+id/creatorNoElementsText"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/creatorAddedElementsRecy"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/creatorHeaderSpace"
+            android:layout_weight="1"
+            />
+
+     <!--   <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:drawableStart="@drawable/ic_round_add_circle_24"
+            android:drawableTint="@color/white"
+            android:textColor="@color/white"
+            android:background="@drawable/round_rect_bgr"
+            android:backgroundTint="@color/deepPurple"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:id="@+id/creatorAddElement"
+            android:layout_weight="0"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            />-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_element_30dp"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/round_ripple"
+            android:id="@+id/creatorAddElement"
+            android:layout_weight="0"
+           />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/creatorCard"
+        app:layout_constraintTop_toBottomOf="@id/creatorAddedElementsLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/creatorCardLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:tag="patternView"
+                android:id="@+id/creatorCardPatternView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <View
+                android:id="@+id/creatorCardBoundPlaceHolderTR"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/creatorCardBoundPlaceHolderBL"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start creating by clicking the '+' button"
+            android:textSize="18sp"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/open_sans_semibold"
+            android:layout_gravity="center"
+            android:id="@+id/creatorEmptyText"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/creatorCardVertLine"
+            android:visibility="gone"
+            android:background="@color/deepPurple"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/creatorCardHorzLine"
+            android:background="@color/deepPurple"
+            android:visibility="gone"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/creatorElementOptionsHolder"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/element_controls_expand_24dp"
+            android:layout_gravity="center"
+            android:id="@+id/creatorElementsControlsExpand"
+            app:layout_anchor="@+id/elementOptionsSheet"
+            app:layout_anchorGravity="center_horizontal"
+            android:paddingBottom="20dp"
+            />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/elementOptionsSheet"
+            android:background="@drawable/top_round_rect_bgr"
+            android:backgroundTint="@color/deepPurpleLight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/elementOptionsRecy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:id="@+id/elementOptionControlsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </FrameLayout>
+                <com.google.android.gms.ads.AdView
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/creatorBanner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/element_controls_banner"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

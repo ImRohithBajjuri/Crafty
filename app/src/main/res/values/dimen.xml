@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cardCorners">30dp</dimen>
+    <dimen name="buttonCorners">15dp</dimen>
+    <dimen name="buttonSize">50dp</dimen>
+    <dimen name="sheetHeaderSize">28sp</dimen>
+</resources>

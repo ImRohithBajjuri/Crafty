@@ -1,0 +1,23 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- This is the line that will be used to cut out the triangle -->
+    <item>
+        <rotate
+            android:fromDegrees="45"
+            android:pivotX="0%"
+            android:pivotY="100%"
+            android:toDegrees="45">
+            <shape android:shape="rectangle">
+                <solid android:color="@android:color/transparent" />
+                <stroke
+                    android:width="10dp"
+                    android:color="@android:color/white" />
+            </shape>
+        </rotate>
+    </item>
+    <!-- This is the background of the triangle -->
+    <item android:bottom="10dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/holo_blue_bright" />
+        </shape>
+    </item>
+</layer-list>

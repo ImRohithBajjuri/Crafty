@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".sheets.CardInfoSheet"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/deepPurple"
+        android:text="Card info"
+        android:textSize="@dimen/sheetHeaderSize"
+        android:fontFamily="@font/open_sans_bold"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/cardInfoSheetHeader"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Name"
+        android:textColor="@color/deepPurple"
+        android:textSize="21sp"
+        android:fontFamily="@font/open_sans_bold"
+        android:id="@+id/cardInfoName"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/deepPurple"
+        android:fontFamily="@font/open_sans_semibold"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Created By :"
+        android:id="@+id/cardInfoBy"
+        app:drawableStartCompat="@drawable/user_30dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/deepPurple"
+        android:fontFamily="@font/open_sans_semibold"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Created On :"
+        android:id="@+id/cardInfoDate"
+        app:drawableStartCompat="@drawable/date_30dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/deepPurple"
+        android:fontFamily="@font/open_sans_semibold"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Updated On :"
+        android:id="@+id/cardInfoUpdated"
+        app:drawableStartCompat="@drawable/updated_date_30dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/deepPurple"
+        android:fontFamily="@font/open_sans_semibold"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="No.of elements"
+        android:id="@+id/cardInfoElementsNum"
+        app:drawableStartCompat="@drawable/number_30dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/deepPurple"
+        android:fontFamily="@font/open_sans_semibold"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Card ID: "
+        android:id="@+id/cardInfoCardId"
+        app:drawableStartCompat="@drawable/id_30dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

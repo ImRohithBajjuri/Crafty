@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".sheets.PremiumUserSheet">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/premiumSheetHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Premium User"
+            android:textColor="@color/deepPurple"
+            android:textSize="@dimen/sheetHeaderSize"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/premium_50dp"
+            android:layout_margin="10dp"
+            android:id="@+id/premiumSheetImg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/deepPurple"
+            android:fontFamily="@font/open_sans_semibold"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/new_premium_user_text"
+            android:id="@+id/premiumSheetInfoText"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Features include"
+            android:textSize="21sp"
+            android:textColor="@color/deepPurple"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:id="@+id/premiumSheetFeaturesHeader"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="30dp"
+            android:id="@+id/premiumSheetFeaturesCard"
+            android:layout_margin="10dp">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/premium_feature_one"
+                    android:textColor="@color/deepPurple"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="18sp"
+                    android:id="@+id/premiumSheetFeatureOne"
+                    app:drawableStartCompat="@drawable/all_inclusive_black_35dp"
+                    android:drawablePadding="10dp"
+                    android:padding="15dp"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/premium_feature_two"
+                    android:textColor="@color/deepPurple"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="18sp"
+                    android:id="@+id/premiumSheetFeatureTwo"
+                    app:drawableStartCompat="@drawable/element_35dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/premium_feature_three"
+                    android:textColor="@color/deepPurple"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="18sp"
+                    android:id="@+id/premiumSheetFeatureThree"
+                    app:drawableStartCompat="@drawable/pattern_design_35dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/premium_feature_four"
+                    android:textColor="@color/deepPurple"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="18sp"
+                    android:id="@+id/premiumSheetFeatureFour"
+                    app:drawableStartCompat="@drawable/premium_element_save_35dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/premium_feature_five"
+                    android:textColor="@color/deepPurple"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="18sp"
+                    android:id="@+id/premiumSheetFeatureFive"
+                    app:drawableStartCompat="@drawable/premium_card_export_35dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/premium_feature_six"
+                    android:textColor="@color/deepPurple"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="18sp"
+                    android:id="@+id/premiumSheetFeatureSix"
+                    app:drawableStartCompat="@drawable/remove_ads_35dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/premium_feature_seven"
+                    android:textColor="@color/deepPurple"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="18sp"
+                    android:id="@+id/premiumSheetFeatureSeven"
+                    app:drawableStartCompat="@drawable/premium_35dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="15dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonSize"
+            app:cardCornerRadius="@dimen/buttonCorners"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/deepPurple"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/premiumSheetGetPremiumButton"
+            android:visibility="gone"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="Get premium"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textAllCaps="true"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                app:drawableStartCompat="@drawable/premium_24dp"
+                android:id="@+id/premiumSheetGetPremiumButtonTxt"/>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonSize"
+            app:cardCornerRadius="@dimen/buttonCorners"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/deepPurple"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/premiumSheetPremiumDetailsButton"
+            android:visibility="gone"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="Premium details"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textAllCaps="true"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                app:drawableStartCompat="@drawable/premium_24dp"
+                android:id="@+id/premiumSheetPremiumDetailsButtonTxt"/>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

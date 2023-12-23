@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rb.crafty.AddedFontsActivity"
+    android:background="@color/lightGrey"
+    android:id="@+id/addedFontsParent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/addedFontsHeaderLayout">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_round_back_30"
+            app:tint="@color/deepPurple"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_ripple"
+            android:contentDescription="Profile Back Button"
+            android:id="@+id/addedFontsBackButton"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Fonts"
+            android:textColor="@color/deepPurple"
+            android:textSize="28sp"
+            android:fontFamily="@font/carter_one"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/addedFontsHeader"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/addedFontsRecy"
+        app:layout_constraintTop_toBottomOf="@id/addedFontsHeaderLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingBottom="100dp"
+        android:clipToPadding="false"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fonts_200dp"
+        android:background="@drawable/circle_background"
+        android:backgroundTint="@color/deepPurpleLight"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/addedFontsEmptyImg"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No added fonts..."
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="@color/deepPurple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addedFontsEmptyImg"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/addedFontsEmptyTxt"
+        android:visibility="gone"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/addedFontsBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/added_fonts_banner"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

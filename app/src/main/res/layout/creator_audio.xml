@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:id="@+id/creatorAudioElement"
+    android:background="@drawable/element_bgr_layer_list"
+    android:outlineProvider="paddedBounds"
+    >
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/creatorAudioElementCard"
+        app:cardBackgroundColor="@color/deepPurpleLight"
+        app:cardCornerRadius="@dimen/cardCorners"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/creatorAudioElementImg"
+            android:src="@drawable/audio_200dp"
+            />
+
+        <androidx.media3.ui.PlayerControlView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/creatorAudioElementPlayer"/>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</FrameLayout>

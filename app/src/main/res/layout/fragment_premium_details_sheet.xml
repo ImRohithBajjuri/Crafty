@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".sheets.PremiumDetailsSheet"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/premiumDetailsSheetHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Premium Details"
+        android:textColor="@color/deepPurple"
+        android:textSize="@dimen/sheetHeaderSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/premium_50dp"
+        android:layout_margin="10dp"
+        android:id="@+id/premiumDetailsSheetImg"
+        app:layout_constraintTop_toBottomOf="@id/premiumDetailsSheetHeader"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/profile_layer_list_50"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/premiumDetailsUserPic"
+        app:layout_constraintTop_toBottomOf="@id/premiumDetailsSheetImg"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user name"
+        android:textColor="@color/deepPurple"
+        android:textSize="21sp"
+        android:fontFamily="@font/open_sans_bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/premiumDetailsSheetImg"
+        app:layout_constraintStart_toEndOf="@id/premiumDetailsUserPic"
+        android:id="@+id/premiumDetailsName"
+        app:layout_constraintBottom_toBottomOf="@id/premiumDetailsUserPic"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product : Crafty Premium"
+        android:id="@+id/premiumDetailsProductName"
+        android:textSize="18sp"
+        android:textColor="@color/deepPurple"
+        android:fontFamily="@font/open_sans_semibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/premiumDetailsUserPic"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sold by : Rebooting Brains"
+        android:id="@+id/premiumDetailsSoldBy"
+        android:textSize="18sp"
+        android:textColor="@color/deepPurple"
+        android:fontFamily="@font/open_sans_semibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/premiumDetailsProductName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purchased on : "
+        android:id="@+id/premiumDetailsDate"
+        android:textSize="18sp"
+        android:textColor="@color/deepPurple"
+        android:fontFamily="@font/open_sans_semibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/premiumDetailsSoldBy"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Id : "
+        android:id="@+id/premiumDetailsId"
+        android:textSize="18sp"
+        android:textColor="@color/deepPurple"
+        android:fontFamily="@font/open_sans_semibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/premiumDetailsDate"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Access : Grants full access to the app with all features unlocked"
+        android:id="@+id/premiumDetailsAccess"
+        android:textSize="18sp"
+        android:textColor="@color/deepPurple"
+        android:fontFamily="@font/open_sans_semibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/premiumDetailsId"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paid through : Google play IAP"
+        android:id="@+id/premiumDetailsPaidThrough"
+        android:textSize="18sp"
+        android:textColor="@color/deepPurple"
+        android:fontFamily="@font/open_sans_semibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/premiumDetailsAccess"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

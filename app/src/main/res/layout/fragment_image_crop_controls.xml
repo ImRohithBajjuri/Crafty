@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rb.crafty.imageControls.ImageCropControlsFragment">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/imageCropOptionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/imageCropOptionCropSH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Crop View"
+            android:textColor="@color/deepPurple"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.canhub.cropper.CropImageView
+            android:id="@+id/imageCropOptionView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageCropOptionCropSH"
+            />
+
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/imageCropOptionZoomSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:checked="true"
+            android:text="Enable auto zoom"
+            android:textColor="@color/deepPurple"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/imageCropOptionView"
+            app:thumbTint="@color/deepPurple"
+            app:trackTint="@color/deepPurpleLight2" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/imageCropOptionComplete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonSize"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="@color/deepPurple"
+            app:cardCornerRadius="@dimen/buttonCorners"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageCropOptionZoomSwitch"
+            app:strokeColor="@color/deepPurple"
+
+            >
+
+            <TextView
+                android:id="@+id/imageCropOptionCompleteTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:gravity="center"
+                android:text="complete crop"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:drawableStartCompat="@drawable/ic_round_crop_free_white_24" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

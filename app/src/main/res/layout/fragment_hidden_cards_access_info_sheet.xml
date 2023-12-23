@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".sheets.HiddenCardsAccessInfoSheet"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/deepPurple"
+        android:text="Biometric access"
+        android:textSize="@dimen/sheetHeaderSize"
+        android:fontFamily="@font/open_sans_bold"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/hidAccessSheetHeader"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/screen_lock_portrait_black_100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You will need to user your device biometrics or others to access your hidden cards"
+        android:textSize="18sp"
+        android:textColor="@color/deepPurple"
+        android:fontFamily="@font/open_sans_semibold"
+        android:layout_margin="10dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonSize"
+        app:cardCornerRadius="@dimen/buttonCorners"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/deepPurple"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/hidAccessOkButton"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="ok"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textAllCaps="true"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

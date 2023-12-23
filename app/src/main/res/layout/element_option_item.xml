@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/round_rect_bgr"
+    android:backgroundTint="@android:color/transparent"
+    android:id="@+id/optionParent"
+    android:layout_margin="10dp"
+    android:clickable="false"
+    android:focusable="false">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/optionImage"
+        android:layout_marginEnd="5dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_round_text_format_24"
+        android:layout_marginStart="2dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="option name"
+        android:textSize="16sp"
+        android:textColor="@color/deepPurple"
+        android:fontFamily="@font/open_sans_semibold"
+        android:layout_gravity="center"
+        android:id="@+id/optionName"
+        android:layout_marginEnd="2dp"
+        />
+</LinearLayout>
